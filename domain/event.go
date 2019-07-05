@@ -3,8 +3,8 @@ package domain
 import "time"
 
 type Coordinate struct {
-	Longitude float64
-	Latitude float64
+	Longitude float64 `json:"longitude"`
+	Latitude  float64 `json:"latitude"`
 }
 
 type Location struct {
@@ -21,4 +21,3 @@ type Event struct {
 	Location    Location  `json:"location,omitempty"`
 	CommunityID uint      `json:"community_id,omitempty"`
 }
-
