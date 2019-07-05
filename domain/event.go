@@ -15,9 +15,11 @@ type Location struct {
 }
 
 type Event struct {
-	ID          uint      `json:"id,omitempty"`
+	ID          int64     `json:"id,omitempty"`
 	Date        time.Time `json:"date,omitempty"`
 	Description string    `json:"description,omitempty"`
 	Location    Location  `json:"location,omitempty"`
-	CommunityID uint      `json:"community_id,omitempty"`
+	CommunityID int64     `json:"community_id,omitempty"`
+	CreatedAt   time.Time `json:"created_at,omitempty"`
+	UpdatedAt   time.Time `json:"updated_at,omitempty"`
 }

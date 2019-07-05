@@ -1,7 +1,7 @@
 package domain
 
 type Community struct {
-	ID          uint    `json:"id,omitempty"`
+	ID          int64   `json:"id,omitempty"`
 	Name        string  `json:"name,omitempty"`
 	BannerURL   string  `json:"banner_url,omitempty"`
 	CreatedBy   User    `json:"created_by,omitempty"`
